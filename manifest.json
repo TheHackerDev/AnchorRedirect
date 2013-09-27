@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Anchor Redirect",
+  "description": "This extension will covertly redirect all links on a page to one other page.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "name": "Anchor Redirect"
+  },
+
+  "content_scripts": [ {
+    "js": [ "anchor_redirect.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+}
